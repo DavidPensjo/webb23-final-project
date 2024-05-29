@@ -13,8 +13,8 @@ jobs:
         image: postgres:latest
         env:
           POSTGRES_DB: django_db
-          POSTGRES_USER: user
-          POSTGRES_PASSWORD: password
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
         ports:
           - 5432:5432
         options: >-
@@ -35,4 +35,3 @@ jobs:
         run: |
           sleep 5  # Wait for the database service to be fully up and running
           python manage.py migrate
-        working-directory: ./blog_project/
