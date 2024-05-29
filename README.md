@@ -90,5 +90,4 @@ In this assignment, you will containerize a Django application, deploy it using 
  - docker-compose.yml line 1
  - Dockerfile line 2
 
-
-Test
+RemovingTestLine
