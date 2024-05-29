@@ -35,3 +35,4 @@ jobs:
         run: |
           sleep 5  # Wait for the database service to be fully up and running
           python manage.py migrate
+        working-directory: ./blog_project/
